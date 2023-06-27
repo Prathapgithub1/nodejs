@@ -1,0 +1,60 @@
+GET http://localhost:3000/books/
+###
+
+GET http://localhost:3000/books/title/
+###
+
+GET http://localhost:3000/books/onerow/
+###
+
+GET http://localhost:3000/books/price/
+###
+
+GET http://localhost:3000/books/42/
+###
+
+// insert a data in database 
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "title": "rgv naa istam",
+    "author_id": 4,
+    "rating": 3.87,
+    "rating_count": 2004456,
+    "review_count": 48152,
+    "description": "If you are a fan of Ram Gopal Varma, the controversial and influential filmmaker from India, you might be interested in reading his autobiography, Rgv Naa Istam. In this book, he reveals his personal and professional life, his opinions on various topics, and his philosophy of filmmaking.",
+    "pages": 489,
+    "date_of_publication": "March 28th 2022",
+    "edition_language": "English and telugu",
+    "price": 950,
+    "online_stores": "Amazon, Apple Books,Google play, Indigo,Abebooks,Walmart eBooks,Audible"
+  }
+###
+
+
+
+
+//update database 
+PUT http://localhost:3000/books/42/
+
+Content-Type:application/json
+
+
+{
+    "title": "no book",
+    "author_id": 5,
+    "rating": 30,
+    "rating_count": 3000000,
+    "review_count": 48152,
+    "description": "If you are a fan of Ram Gopal Varma, the controversial and influential filmmaker from India, you might be interested in reading his autobiography, Rgv Naa Istam. In this book, he reveals his personal and professional life, his opinions on various topics, and his philosophy of filmmaking.",
+    "pages": 489,
+    "date_of_publication": "March 28th 2022",
+    "edition_language": "English and telugu",
+    "price": 950,
+    "online_stores": "Amazon, Apple Books,Google play, Indigo,Abebooks,Walmart eBooks,Audible"
+  }
+###
+
+
+
